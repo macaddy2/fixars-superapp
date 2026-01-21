@@ -19,6 +19,7 @@ import InvestDen from '@/apps/investden/InvestDen'
 import ConceptNexus from '@/apps/conceptnexus/ConceptNexus'
 import Collaboard from '@/apps/collaboard/Collaboard'
 import SkillsCanvas from '@/apps/skillscanvas/SkillsCanvas'
+import TalentProfile from '@/apps/skillscanvas/TalentProfile'
 
 // Simple placeholder pages
 function About() {
@@ -97,6 +98,7 @@ export default function App() {
                     <Route path="/apps/conceptnexus" element={<ConceptNexus />} />
                     <Route path="/apps/collaboard" element={<Collaboard />} />
                     <Route path="/apps/skillscanvas" element={<SkillsCanvas />} />
+                    <Route path="/apps/skillscanvas/talent/:id" element={<TalentProfile />} />
 
                     {/* Placeholders for additional routes */}
                     <Route path="/profile" element={<Dashboard />} />
